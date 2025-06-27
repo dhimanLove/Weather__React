@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./NavBar.css";
 import logo from "../../assets/logo.png";
 
@@ -6,11 +7,11 @@ const NavBar = () => {
   return (
     <section className="nav-section">
       <nav>
-        <img src={logo} alt="" />
+        <img src={logo} alt="logo" />
         <ul>
           <li>
             <ion-icon name="home-outline"></ion-icon>
-            <span>Home</span>
+            <Link to="/">Home</Link>
           </li>
           <li>
             <ion-icon name="newspaper-outline"></ion-icon>
